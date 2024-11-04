@@ -1,0 +1,4 @@
+1:high: Reply back to node 1
+3:normal: Node 2's message to node 3
+4:high: Data transfer 2->4
+5:normal: Greetings to node 5 from 2

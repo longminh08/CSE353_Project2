@@ -1,0 +1,4 @@
+1:high: 4 Feedback to node 1
+2:normal: Node 4 sending to node 2
+3:high: Message stream 4->3
+5:normal: Last test from 4 to 5

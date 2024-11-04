@@ -1,0 +1,5 @@
+2:normal: Hello from node 1 to node 2
+3:normal: Testing message from 1 to 3
+4:high: Node 1 sending data to node 4
+5:high: Communication test 1->5
+99:normal: Message to unknown node 99

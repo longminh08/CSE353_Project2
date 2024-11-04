@@ -1,0 +1,30 @@
+# Java compiler
+JAVAC = javac
+# Java runtime
+JAVA = java
+# Classes to compile
+CLASSES = Main.java Switch.java Node.java Frame.java
+# Directory for compiled .class files
+BIN_DIR = bin
+
+# Default target
+.PHONY: all
+all: $(BIN_DIR) $(CLASSES:.java=.class)
+
+# Compile Java classes into bin directory
+$(BIN_DIR):
+	mkdir -p $(BIN_DIR)
+
+$(BIN_DIR)/%.class: %.java
+	$(JAVAC) -d $(BIN_DIR) $<
+
+# Rule to compile all classes
+compile: $(CLASSES:.java=.class)
+
+# Running main program
+run:
+	$(JAVA) -cp $(BIN_DIR) Main
+
+# Clean up .class files
+clean:
+	rm -rf $(BIN_DIR)

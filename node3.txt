@@ -1,0 +1,4 @@
+1:normal: Message to node 3 from 1
+2:high: Testing 3->2 communication
+4:normal: Node 3 data packet to 4
+5:high: Third node messaging fifth
